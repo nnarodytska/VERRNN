@@ -12,5 +12,14 @@ https://github.com/nnarodytska/VERRNN/blob/master/rnn_veri.pdf
 
 # To Run the Experiments
 
-   TODO
+   Work in progress...
+
+## Our Tool
+
+## NNV for comparison
+
+## Marabou for comparison
+
+Please first have [Marabou](https://github.com/NeuralNetworkVerification/Marabou/tree/master) and its python API installed. And then go to `marabou`, run `python bmc_marabou.py`. Results will be stored at `result.log`
+
 
