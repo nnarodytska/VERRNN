@@ -18,8 +18,14 @@ https://github.com/nnarodytska/VERRNN/blob/master/rnn_veri.pdf
 
 ## NNV for comparison
 
+First, please install [NNV toolbox](https://github.com/verivital/nnv) for Matlab.
+
+In `nnv` subfolder, those scripts starting with `p1` are for property 1. Those starting with `p2` are for property 2.
+Unlike Marabou, we don't have the outer loop to test all test ranges in one run (as usually we need to interrupt the execution manually as we don't have a time-out mechanism built into the scripts)
+
 ## Marabou for comparison
 
 Please first have [Marabou](https://github.com/NeuralNetworkVerification/Marabou/tree/master) and its python API installed. And then go to `marabou`, run `python bmc_marabou.py`. Results will be stored at `result.log`
+We only experimented Marabou with Property 1.
 
 
