@@ -1,0 +1,87 @@
+{
+    "adversarial": {
+        "epsilon": 0.1,
+        "iterations": 50
+    },
+    "choice": {
+        "choice_tail": 10,
+        "choice_thresh_lb": -0.5,
+        "choice_thresh_ub": 0.5
+    },
+    "id": "4",
+    "manual_seed": 0,
+    "name": "task_3",
+    "network": {
+        "N_batch": 100,
+        "N_rec": 7,
+        "W_in_train": "True",
+        "W_out_train": "True",
+        "W_rec_train": "True",
+        "b_out_train": "True",
+        "b_rec_train": "True",
+        "clipping": 0,
+        "dale_ratio": "None",
+        "init_state_train": "True",
+        "load_weights_path": "None",
+        "loss_function": "custom_pw_squared_error",
+        "name": "basicModel",
+        "rec_noise": 0,
+        "tau": 0.1
+    },
+    "plots": {
+        "adversarial_file": "adversarial",
+        "chronometric_file": "chronometric",
+        "nb_samples": 8,
+        "psychometric_file": "psychometric",
+        "save_dir": "plots/",
+        "thresh_correct_response": 0.7,
+        "training_results_file": "training_results"
+    },
+    "rdm": {
+        "coherences": [
+            0.0001,
+            0.016,
+            0.032,
+            0.064,
+            0.128,
+            0.256,
+            0.512,
+            1.024,
+            -0.0001,
+            -0.016,
+            -0.032,
+            -0.064,
+            -0.128,
+            -0.256,
+            -0.512,
+            -1.024
+        ],
+        "discretization": 0,
+        "dt": 0.1,
+        "fixation_dur": 1,
+        "hold_dur": 5,
+        "name": "response_time",
+        "noise_variance": 0.3,
+        "response_delay": 5,
+        "stim_dur": 5,
+        "task_dur": 10
+    },
+    "save_dir": "./results/2019-07-04_0_neurons_7_steps_110.0_noise_0.3",
+    "train": {
+        "L1_rec": 0.01,
+        "L1_rec_quant_level": 0.05,
+        "L1_rec_turn_on_epoch": 30000,
+        "clip_grads": "True",
+        "generator_function": "None",
+        "learning_rate": 0.001,
+        "loss_epoch": 10,
+        "rs_loss_nlayers": 5,
+        "save_dir": "models/",
+        "save_model_file": "model.ckpt",
+        "save_model_weights_file": "weights.npz",
+        "save_training_weights_epoch": 100,
+        "training_iters": 100000,
+        "training_weights_path": "None",
+        "verbosity": "True"
+    }
+}
