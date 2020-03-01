@@ -21,7 +21,12 @@ https://github.com/nnarodytska/VERRNN/blob/master/rnn_veri.pdf
 First, please install [NNV toolbox](https://github.com/verivital/nnv) for Matlab.
 
 In `nnv` subfolder, those scripts starting with `p1` are for property 1. Those starting with `p2` are for property 2.
-Unlike Marabou, we don't have the outer loop to test all test ranges in one run (as usually we need to interrupt the execution manually as we don't have a time-out mechanism built into the scripts)
+Unlike the other experiments, we don't have the outer loop to test all test ranges in one run (because usually we need to interrupt the execution manually as we don't have a time-out mechanism built into the scripts). So for each run you need to change the test range selection in the line like `range_select_idx = ?;`, or you can manually specify the ranges in the lines
+```
+ilb = ???; % input lower bound
+iub = ???; % input upper bound
+```
+in the beginning of the scripts.
 
 ## Marabou for comparison
 
