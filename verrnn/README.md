@@ -5,7 +5,7 @@
 * Python library: numpy, scipy, cdd, pysmt, 
 matplotlib
 
-### Instructions
+#### Instructions
 
 For Property 1: to run experiment using polytope propagation, invariant, and CEGAR method, use:
 `python3 pp_test.py`,

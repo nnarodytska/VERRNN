@@ -12,9 +12,9 @@ https://github.com/nnarodytska/VERRNN/blob/master/rnn_veri.pdf
 
 # To Run the Experiments
 
-   Work in progress...
-
 ## Our Tool
+
+   See [README.md](https://github.com/nnarodytska/VERRNN/blob/master/verrnn/README.md) in verrnn
 
 ## NNV for comparison
 
