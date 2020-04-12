@@ -35,7 +35,7 @@ testranges = [\
 (-0.000142,-0.000071),
 (-0.045255,-0.022627),
 (-0.181019,-0.090510),
-(-0.724077,-0.362039)
+(-0.724077,-0.362039),
 (-1.448155,-0.724077),
 (-0.000163,-0.000062),
 (-0.051984,-0.019698),
@@ -251,6 +251,6 @@ def run_all_tests(tests, timeout, timeoutFile, cegarOptions , fileoption = 'w'):
 
 if __name__ == "__main__":
     cegarOptions = cegar_option()
-    run_all_tests(tests = testrangesnew,cegarOptions=cegarOptions, timeout=100*60, timeoutFile='join_test.lock',fileoption='a+')
+    run_all_tests(tests = testranges,cegarOptions=cegarOptions, timeout=100*60, timeoutFile='join_test.lock',fileoption='a+')
     exit(1)
 
