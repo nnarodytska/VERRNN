@@ -14,7 +14,7 @@ https://github.com/nnarodytska/VERRNN/blob/master/rnn_veri.pdf
 
 ## Our Tool
 
-   See [README.md](https://github.com/nnarodytska/VERRNN/blob/master/verrnn/README.md) in verrnn
+   See [README.md](https://github.com/nnarodytska/VERRNN/tree/master/verrnn) in verrnn
 
 ## NNV for comparison
 
