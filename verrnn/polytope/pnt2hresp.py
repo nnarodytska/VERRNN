@@ -3,6 +3,8 @@ import cdd
 from scipy.spatial import ConvexHull
 from .qhull_local_interface import run_qhull
 
+External_Qhull_Path = '/home/hongce/summer19/qhull-2019.1/build/qhull'
+
 epsilon = 1e-5 # please adjust this for finding dimensions
 
 def toHullScipy(low_dim_pts_reduct, timeout, externQhull=False):
@@ -22,7 +24,7 @@ def toHullScipy(low_dim_pts_reduct, timeout, externQhull=False):
         #except:
         #    print ('W: Qhull failed, turn on Q14 (merge) option')
             #equations = run_qull(low_dim_pts_reduct, '/home/hongce/data/qhull-2019.1/build/qhull', 'Qx Qt')
-            equations = run_qhull(low_dim_pts_reduct, '/home/hongce/summer19/qhull-2019.1/build/qhull', 'Qx Qt', timeout=timeout)
+            equations = run_qhull(low_dim_pts_reduct, External_Qhull_Path, 'Qx Qt', timeout=timeout)
 
         A = equations[:,:-1]
         b = -equations[:,-1]

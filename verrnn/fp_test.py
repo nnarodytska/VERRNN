@@ -11,7 +11,6 @@ Sequence = polytope.Sequence
 # -----------------------------------------------
 # configurations
 modelpath = "../N7_L1_r11/"
-modelpath = "../N7_L1_r11/"
 testranges = [\
 (0.000087 ,0.000115),
 (0.027858 ,0.036758),
@@ -239,4 +238,4 @@ def run_all_tests(tests, timeout, timeoutFile):
 
 if __name__ == "__main__":
     #run_all_tests(start_test_idx = 9, timeout=100*60, timeoutFile='fp_test.lock')
-    run_all_tests(tests = testranges[-5:-4], timeout=100*60, timeoutFile='fp_test.lock')
+    run_all_tests(tests = testranges, timeout=100*60, timeoutFile='fp_test.lock')

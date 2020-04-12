@@ -225,7 +225,7 @@ def run_all_tests(tests, timeout, timeoutFile, cegarOptions , fileoption = 'w'):
     global maxlayers_gone
     global maxNeural
     
-    with open('join_test.log', fileoption) as fp:
+    with open('pp_test.log', fileoption) as fp:
         for ilb, iub in tests:
             maxNeural = 0
             maxlayers_gone = 0
@@ -251,6 +251,6 @@ def run_all_tests(tests, timeout, timeoutFile, cegarOptions , fileoption = 'w'):
 
 if __name__ == "__main__":
     cegarOptions = cegar_option()
-    run_all_tests(tests = testranges,cegarOptions=cegarOptions, timeout=100*60, timeoutFile='join_test.lock',fileoption='a+')
+    run_all_tests(tests = testranges,cegarOptions=cegarOptions, timeout=100*60, timeoutFile='pp_test.lock',fileoption='a+')
     exit(1)
 
